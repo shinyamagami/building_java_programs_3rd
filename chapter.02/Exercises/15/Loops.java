@@ -7,12 +7,11 @@ public class Loops{
 			for (int j = 6 - i; j >= 1; j--){
 				System.out.print("-");
 			}
-			for ( int k = 1; k <= 4 * i - 2; k += 2){
-				System.out.print(2 * i - 1);
+			for (int k = 2 * i - 1; k <= 9; k += 2){
+					System.out.print(k);
+
 			}
-			for (int l = 6 - i; l >= 1; l--){
-				System.out.print("-");
-			}
+
 			System.out.println();
 		}
 	}
