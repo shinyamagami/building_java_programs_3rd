@@ -1,42 +1,27 @@
 import java.util.*; // for Scanner
 
 public class Season{
-    public static String season(int month, int day){
-        if (month == 12){
-            if (day >= 16){
-                return "winter";
+    public static String season(int m, int d){
+        if (d >= 16){
+            if(m == 12 || m == 1 || m == 2){
+                return "Winter";
+            } else if (m == 3 || m == 4 || m == 5){
+                return "Spring";
+            } else if (m == 6 || m == 7 || m == 8){
+                return "Summer";
             } else {
-                return "fall";
+                return "Fall";
             }
-        } else if (month == 1 || month == 2){
-            return "winter";
-        }
-        if (month == 3){
-            if (day >= 16){
-                return "spring";
+        else{
+            if(m == 1 || m == 2 || m == 3){
+                return "Winter";
+            } else if (m == 4 || m == 5 || m == 6){
+                return "Spring";
+            } else if (m == 7 || m == 8 || m == 9){
+                return "Summer";
             } else {
-                return "winter";
+                return "Fall";
             }
-        } else if (month == 4 || month == 5){
-            return "spring";
-        }
-        if (month == 6){
-            if (day >= 16){
-                return "summer";
-            } else {
-                return "spring";
-            }
-        } else if (month == 7 || month == 8){
-            return "summer";
-        }
-        if (month == 9){
-            if (day >= 16){
-                return "fall";
-            } else {
-                return "sumer";
-            }
-        } else if (month == 10 || month == 11){
-            return "fall";
         }
         return "error";
     }
